@@ -23,21 +23,21 @@ void main(List<String> args) {
     File('lib/input/$currentDay.txt').writeAsString('');
     File('lib/days/$currentDay.dart').writeAsString(
       '''
-    import 'package:advent_of_code_2022/utils.dart';
-    
-    void main() {
-      final input = readInput($currentDay);
-      print(partOne(input));
-      // print(partTwo(input));
-    }
-    
-    dynamic partOne(List<String> input) {
-    return -1;
-    }
-    dynamic partTwo(List<String> input) {
-    return -1;
-    }
-    
+import 'package:advent_of_code_2022/utils.dart';
+
+void main() {
+  final input = readInput(8);
+  print(partOne(input));
+  // print(partTwo(input));
+}
+
+dynamic partOne(List<String> input) {
+  return -1;
+}
+
+dynamic partTwo(List<String> input) {
+  return -1;
+}
     ''',
     );
   } catch (e, st) {
