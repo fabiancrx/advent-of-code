@@ -86,32 +86,32 @@ int scenicScore(List<List<int>> grid, int x, int y) {
   final value = grid[x][y];
 
   int leftScore = 0;
-  for (int i = x - 1; i >= 0; i -= 1) {
-    leftScore += 1;
+  for (int i = x - 1; i >= 0; i--) {
+    leftScore++;
     final height = grid[i][y];
     if (height >= value) {
       break;
     }
   }
   int rightScore = 0;
-  for (int i = x + 1; i < grid[x].length; i += 1) {
-    rightScore += 1;
+  for (int i = x + 1; i < grid[x].length; i++) {
+    rightScore++;
     final height = grid[i][y];
     if (height >= value) {
       break;
     }
   }
   int upScore = 0;
-  for (int j = y - 1; j >= 0; j -= 1) {
-    upScore += 1;
+  for (int j = y - 1; j >= 0; j--) {
+    upScore++;
     final height = grid[x][j];
     if (height >= value) {
       break;
     }
   }
   int downScore = 0;
-  for (int j = y + 1; j < grid.length; j += 1) {
-    downScore += 1;
+  for (int j = y + 1; j < grid.length; j++) {
+    downScore++;
     final height = grid[x][j];
     if (height >= value) {
       break;
