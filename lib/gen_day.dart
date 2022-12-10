@@ -26,7 +26,7 @@ void main(List<String> args) {
 import 'package:advent_of_code_2022/utils.dart';
 
 void main() {
-  final input = readInput(8);
+  final input = readInput($currentDay);
   print(partOne(input));
   // print(partTwo(input));
 }
