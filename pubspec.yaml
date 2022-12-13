@@ -8,6 +8,7 @@ environment:
 
 dependencies:
   collection:
+  fpdart: ^0.3.0
   quiver:
 
 dev_dependencies:

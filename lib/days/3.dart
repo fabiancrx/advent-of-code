@@ -1,4 +1,4 @@
-import 'package:advent_of_code_2022/utils.dart';
+import 'package:advent_of_code_2022/utils/read_input.dart';
 
 const map = {
   'a': 1,

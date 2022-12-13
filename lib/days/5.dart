@@ -1,6 +1,6 @@
 import 'dart:collection';
 
-import 'package:advent_of_code_2022/utils.dart';
+import 'package:advent_of_code_2022/utils/read_input.dart';
 
 // [N]     [C]                 [Q]
 // [W]     [J] [L]             [J] [V]
