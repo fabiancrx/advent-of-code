@@ -23,7 +23,6 @@ class Dijkstra {
   }
 
   Iterable<Tuple2<int, int>>? shortestPath(Tuple2<int, int> start, Tuple2<int, int> goal) {
-
     final paths = <Tuple2<int, int>, double>{start: 0};
     final prev = <Tuple2<int, int>, Tuple2<int, int>>{};
 
@@ -44,7 +43,9 @@ class Dijkstra {
       }
 
       for (final neighbor in neighbours(current)) {
-        final alt = paths[current]! + 1;
+        // final weight= graph[current.first][current.second];
+        final weight = 1;
+        final alt = paths[current]! + weight;
         if (alt < (paths[neighbor] ?? double.infinity)) {
           paths[neighbor] = alt;
           prev[neighbor] = current;
