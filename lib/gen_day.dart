@@ -23,7 +23,7 @@ void main(List<String> args) {
     File('lib/input/$currentDay.txt').writeAsString('');
     File('lib/days/$currentDay.dart').writeAsString(
       '''
-import 'package:advent_of_code_2022/read_input.dart';
+import 'package:advent_of_code_2022/utils/read_input.dart';
 
 void main() {
   final input = readInput($currentDay);
